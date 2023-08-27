@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9E470994-A830-4319-BD00-68C6E2CBCA44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotProxy", "src\BotProxy\BotProxy.csproj", "{519C64A2-2D15-4B6A-AB8B-FD88B65CBEDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{519C64A2-2D15-4B6A-AB8B-FD88B65CBEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519C64A2-2D15-4B6A-AB8B-FD88B65CBEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519C64A2-2D15-4B6A-AB8B-FD88B65CBEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519C64A2-2D15-4B6A-AB8B-FD88B65CBEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{519C64A2-2D15-4B6A-AB8B-FD88B65CBEDF} = {9E470994-A830-4319-BD00-68C6E2CBCA44}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0E56E69-69B7-44DD-84F3-A252E21B18C3}
+	EndGlobalSection
+EndGlobal
