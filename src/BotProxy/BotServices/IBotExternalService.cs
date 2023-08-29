@@ -1,4 +1,6 @@
-﻿namespace BotProxy.BotServices;
+﻿using BotProxy.Models;
+
+namespace BotProxy.BotServices;
 
 public interface IBotExternalService
 {
@@ -7,4 +9,6 @@ public interface IBotExternalService
     Task StartListener(string streamUrl, CancellationToken cancellationToken);
 
     Task<string?> SendActivity(string conversationId, string userId, string message, CancellationToken cancellationToken);
+
+    Task<RootObject?> RetrieveActivities(string conversationId, CancellationToken cancellationToken);
 }

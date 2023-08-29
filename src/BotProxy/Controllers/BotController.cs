@@ -15,17 +15,26 @@ public class BotController : ApiControllerBase
         return Ok(result);
     }
 
-    //[HttpPost("StartConversation")]
-    //public async Task<ActionResult> StartListener(string streamUrl)
-    //{
+    [HttpPost("StartListener")]
+    public async Task<ActionResult> StartListener(StartListenerCommand command)
+    {
 
-    //    await _botExternalService.StartListener(streamUrl, new CancellationToken());
+        var result = await Mediator.Send(command);
 
-    //    return Ok();
-    //}
+        return Ok();
+    }
 
     [HttpPost("SendActivity")]
     public async Task<ActionResult<string?>> SendActivity(SendActivityCommand command)
+    {
+
+        var result = await Mediator.Send(command);
+
+        return Ok(result);
+    }
+
+    [HttpPost("RetrieveActivities")]
+    public async Task<ActionResult<string?>> RetrieveActivities(RetrieveActivitiesCommand command)
     {
 
         var result = await Mediator.Send(command);
