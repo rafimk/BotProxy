@@ -195,7 +195,7 @@ public class BotExternalService : IBotExternalService
             // httpClient.BaseAddress = new Uri(_serviceOptions.BaseUrl);
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _serviceOptions.AuthorizationToken);
 
-            var postEndPoint = $"{_serviceOptions.BaseUrl} v3/directline/conversations/{conversationId}/activities";
+            var postEndPoint = $"{_serviceOptions.BaseUrl}v3/directline/conversations/{conversationId}/activities";
 
             try
             {
